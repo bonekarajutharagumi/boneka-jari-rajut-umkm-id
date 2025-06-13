@@ -314,6 +314,32 @@ h6 {
     color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
   }
 
+
+  .navmenu .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu .dropdown:hover ul {
+    display: block;
+  }
+
+  .navmenu .dropdown ul li {
+    min-width: 180px;
+  }
+
+  .navmenu .dropdown ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+  }
+
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
