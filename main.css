@@ -1038,6 +1038,27 @@ section,
   display: block;
 }
 
+/* Tombol Produk yang sama persis dengan tombol Beranda */
+.produk-btn-pesan {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.produk-btn-pesan:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1349,4 +1370,46 @@ section,
 
 .contact-social-wrapper .social-links a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/* Ukuran gambar artikel tetap dan sejajar */
+.artikel-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.artikel-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* gambar akan crop supaya tetap rapi */
+}
+
+/* Untuk membuat semua card sejajar isi dan tombolnya */
+.artikel-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.artikel-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.artikel-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Hindari pergeseran layout saat modal dibuka */
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: auto !important;
 }
